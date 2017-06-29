@@ -1,0 +1,14 @@
+<div class="container-fluid">
+    <div>
+        <ul>
+            <li *ngFor="let item of shoppinglist">
+                <span>
+                    <label>Name: </label>
+                    <input [(ngModel)]="item.name" placeholder="name">
+                    <label>Quantity: </label>
+                    <input [(ngModel)]="item.quantity" placeholder="quantity">
+                </span>
+            </li>
+        </ul>
+    </div>
+</div>
